@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jogo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <div class="game">
+
+            <div id="regras" class="regras">
+                <div class="regras-content">
+                    <h2>Regras do jogo</h2>
+                    <ol>
+                        <li>Um jogador (ou a equipe) recebe uma lista de palavras.</li>
+                        <li>O objetivo é adivinhar a palavra que tem relação com todas as palavras da lista.</li>
+                        <li>Para cada rodada, será dada uma lista de 3 a 5 palavras.</li>
+                        <li>Cada resposta correta vale 2 pontos.</li>
+                        <li>Cada resposta incorreta irá diminuir 1 ponto da pontuação total</li>
+                        <li>Se o jogo tiver pontuação igual a -5 pontos, automaticamente, finalizará o jogo</li>
+                        <li>O jogo pode ter um número pré-definido de rodadas ou pode ser jogado até que uma equipe alcance um certo número de pontos.</li>
+                        <li>O jogador que alcançar 10 pontos primeiro, vence!</li>
+                    </li>
+                </div>
+            </div>
+    
+    
+            <div class="jogo">
+                
+                <div class="jogo-content">
+                    
+                    <h2>Adivinhe o tema</h2>
+    
+                    <div class="content">
+                        <div id="jogador">
+    
+                            <p>Jogador 1</p>
+        
+                            <div id="pontuacao1"> </div>
+        
+                        </div>
+                        
+                        <div id="jogador">
+        
+                            <p>Jogador 2</p>
+        
+                            <div id="pontuacao2"> </div>
+                            
+                        </div>
+        
+                        <div id="turno">
+        
+                            <p>Jogador </p>
+        
+                            <div id="jogador-atual"> </div>
+                       
+                        </div>
+    
+                    </div>
+    
+                    <button class="botao-mostrar" onclick="mostrarLista()">Mostrar Grupos de Palavras</button>
+                  
+                    <div id="jogo-lista"></div>
+    
+                    <input type="text" id="input-tema" class="input-tema">
+                    
+                    <button class="botao-enviar" onclick="adivinharTema()">Enviar resposta</button>
+    
+                </div>
+               
+            </div>
+
+        </div>
+
+      
+
+
+        <script src="jogo.js"></script>
+        
+    </body>
+    </html>
+
+</body>
+</html>
