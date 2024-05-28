@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="jogo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playball&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Play:wght@400;700&family=Poetsen+One&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -31,16 +31,19 @@
                         <li>O objetivo é adivinhar a palavra que tem relação com todas as palavras da lista.</li>
                         <li>Para cada rodada, será dada uma lista de 3 a 5 palavras.</li>
                         <li>Cada resposta correta vale 2 pontos.</li>
-                        <li>Cada resposta incorreta irá diminuir 1 ponto da pontuação total</li>
-                        <li>Se o jogo tiver pontuação igual a -5 pontos, automaticamente, finalizará o jogo</li>
+                        <li>Cada resposta incorreta irá diminuir 1 ponto da pontuação total.</li>
+                        <li>Se o jogo tiver pontuação igual a -5 pontos, automaticamente, finalizará o jogo.</li>
                         <li>O jogo pode ter um número pré-definido de rodadas ou pode ser jogado até que uma equipe alcance um certo número de pontos.</li>
                         <li>O jogador que alcançar 10 pontos primeiro, vence!</li>
-                    </li>
+                    </ol>
+                    <button class="botao-fechar" id="botao-fechar" onclick="">OK</button>
                 </div>
             </div>
+
+            
     
     
-            <div class="jogo">
+            <div class="jogo" id="jogo">
                 
                 <div class="jogo-content">
                     
@@ -84,6 +87,14 @@
                 </div>
                
             </div>
+
+
+            <div class="mostrarRegras">
+
+                <button id="botao-mostrar-regras" onclick="mostrarRegras()">Regras do Jogo</button>
+
+            </div>
+           
 
         </div>
 

@@ -1,3 +1,5 @@
+
+
 //grupo de palavras
 
 const escola = [
@@ -187,3 +189,25 @@ function adivinharTema() {
 
 }
 
+
+
+document.getElementById('botao-fechar').onclick = function() {
+    const regrasElement = document.getElementById('regras');
+    const jogoElement = document.getElementById('jogo');
+    
+    regrasElement.style.visibility = 'hidden';
+    jogoElement.style.display ='flex';
+    
+    regrasElement.classList.add('hidden');
+    jogoElement.classList.remove('hidden');
+};
+
+document.getElementById('botao-mostrar-regras').onclick = function() {
+    const regrasElement = document.getElementById('regras');
+    const jogoElement = document.getElementById('jogo');
+
+    jogoElement.style.display = 'none'; // Oculta o elemento do jogo
+
+    regrasElement.style.visibility = 'visible'; 
+
+};
